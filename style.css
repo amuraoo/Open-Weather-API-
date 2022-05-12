@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    /* font-family: 'Oxygen', sans-serif; */
+    font-family: 'Roboto Mono', monospace;
+    background-image: url('images/sebastian-svenson-LpbyDENbQQg-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    padding: 20px 70px;
+}
+
+.contain {
+    display: flex;
+    justify-content: space-between;
+}
+
+.time {
+    font-size: 50px;
+    color: rgb(32, 33, 86);
+}
+
+.date {
+    font-size: 25px;
+    color: rgb(32, 33, 86);
+    letter-spacing: 5px;
+    padding-bottom: 20px;
+}
+
+.sub-contain {
+    background-color: rgba(245, 245, 245, 0.43);
+    border: 2px solid whitesmoke;
+    color: rgb(32, 33, 86);
+    letter-spacing: 2px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.sub-contain {
+    display: flex;
+    flex-direction: column;
+}
+
+#current-weather,
+.weather-item,
+.sub-contain {
+    display: flex;
+    justify-content: space-between;
+}
+
+#am-pm {
+    font-size: 30px;
+}
+
+#time-zone {
+    font-size: 18px;
+    color: rgb(32, 33, 86);
+    letter-spacing: 3px;
+    text-align: end;
+}
+
+#country {
+    font-size: 15px;
+    text-align: end;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: rgb(32, 33, 86);
+}
+
+.future-forecast {
+    padding: 25px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccf2f34f;
+}
+
+.future-forecast,
+.weather-forecast {
+    display: flex;
+}
+
+.today {
+    display: flex;
+    background-color: #243e62;
+    border: 3px solid #243e62;
+}
+
+.other {
+    text-align: justify;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #243e62;
+}
+
+.future-forecast .weather-forecast {
+    display: flex;
+}
+
+.future-forecast .today {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 15px;
+    padding-right: 40px;
+    border-radius: 10px;
+}
+
+.future-forecast .today .day {
+    padding: 5px 15px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.future-forecast .today,
+.temp {
+    font-size: 18px;
+    color: white;
+    padding-top: 15px;
+}
+
+.weather-forecast .weather-forecast-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.weather-forecast .weather-forecast-item .day {
+    padding: 5px 15px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.weather-forecast .weather-forecast-item .temp {
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.day {
+    background-color: #def3f1;
+}
+
+#tue {
+    background-color: #7796a8;
+    border: 3px solid #7796a8;
+    color: #7796a8;
+}
+
+#wed {
+    background-color: #95b6c1;
+    border: 3px solid #95b6c1;
+    color: #89aab6;
+}
+
+#thur {
+    background-color: #cce4db;
+    border: 3px solid #cce4db;
+    color: #b2cec3;
+}
+
+#fri {
+    background-color: #aca3ad;
+    border: 3px solid #aca3ad;
+    color: #aca3ad;
+}
+
+#sat {
+    background-color: #d2987f;
+    border: 3px solid #d2987f;
+    color: #d2987f;
+}
+
+#sun {
+    background-color: #ebc2ad;
+    border: 3px solid #ebc2ad;
+    color: #ebc2ad;
+}
+
+label {
+    position: absolute;
+    width: 45px;
+    height: 25px;
+    right: 20px;
+    top: 5px;
+    border: 2px solid;
+    border-radius: 20px;
+}
+
+label:before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    left: 1px;
+    top: 1px;
+    border-radius: 50%;
+    background-color: #243e62;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+label.active:before {
+    left: 24px;
+    background: #fff;
+}
+
+body.night {
+    background-image: url('images/anil-kumar-SXigdcQPbd8-unsplash.jpg');
+    color: #fff;
+}
+
+@media screen and (max-width:730px) {
+    .container {
+        padding: 20px 30px;
+    }
+    #am-pm,
+    #time {
+        font-size: 25px;
+    }
+    #date {
+        font-size: 20px;
+    }
+    #time-zone {
+        font-size: 15px;
+    }
+    #country {
+        font-size: 13px;
+    }
+    .sub-contain {
+        font-size: 13px;
+    }
+    .day {
+        font-size: 15px;
+    }
+    .temp {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:545px) {
+    label {
+        position: absolute;
+        width: 40px;
+        height: 16.5px;
+        right: 20px;
+        top: 5px;
+        border: 2px solid;
+        border-radius: 20px;
+    }
+    label:before {
+        position: absolute;
+        content: '';
+        width: 12px;
+        height: 12px;
+        left: 0.5px;
+        top: 0px;
+        border-radius: 50%;
+        background-color: #243e62;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    label.active:before {
+        left: 24px;
+        background: #fff;
+    }
+}
+
+@media screen and (max-width:415px) {
+    #am-pm,
+    #time {
+        font-size: 25px;
+    }
+    #date {
+        font-size: 18px;
+    }
+    #time-zone {
+        font-size: 13px;
+    }
+    .sub-contain {
+        font-size: 12px;
+    }
+    #country {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:378px) {
+    #am-pm,
+    #time {
+        font-size: 23px;
+    }
+    #date {
+        font-size: 18px;
+    }
+    #time-zone {
+        font-size: 10px;
+    }
+    #country {
+        font-size: 8px;
+    }
+    .sub-contain {
+        font-size: 10px;
+    }
+    .day {
+        font-size: 13px;
+    }
+    .temp {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .future-forecast {
+        justify-content: start;
+        align-items: none;
+        overflow-x: scroll;
+    }
+}
