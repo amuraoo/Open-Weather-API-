@@ -161,39 +161,8 @@ body {
 }
 
 #tue {
-    background-color: #7796a8;
-    border: 3px solid #7796a8;
-    color: #7796a8;
-}
-
-#wed {
-    background-color: #95b6c1;
-    border: 3px solid #95b6c1;
-    color: #89aab6;
-}
-
-#thur {
-    background-color: #cce4db;
-    border: 3px solid #cce4db;
-    color: #b2cec3;
-}
-
-#fri {
-    background-color: #aca3ad;
-    border: 3px solid #aca3ad;
-    color: #aca3ad;
-}
-
-#sat {
-    background-color: #d2987f;
-    border: 3px solid #d2987f;
-    color: #d2987f;
-}
-
-#sun {
-    background-color: #ebc2ad;
-    border: 3px solid #ebc2ad;
-    color: #ebc2ad;
+    background-color: #95b6c1d4;
+    color: #6c8a95;
 }
 
 label {
@@ -336,3 +305,34 @@ body.night {
         overflow-x: scroll;
     }
 }
+
+
+/* #wed {
+    background-color: #95b6c1;
+    border: 3px solid #95b6c1;
+    color: #89aab6;
+}
+
+#thur {
+    background-color: #cce4db;
+    border: 3px solid #cce4db;
+    color: #b2cec3;
+}
+
+#fri {
+    background-color: #aca3ad;
+    border: 3px solid #aca3ad;
+    color: #aca3ad;
+}
+
+#sat {
+    background-color: #d2987f;
+    border: 3px solid #d2987f;
+    color: #d2987f;
+}
+
+#sun {
+    background-color: #ebc2ad;
+    border: 3px solid #ebc2ad;
+    color: #ebc2ad;
+} */
